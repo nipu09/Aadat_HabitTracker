@@ -1,0 +1,38 @@
+/* Horizontally scrollable heat map (a full year is wider than a phone) */
+.heatmap-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.heatmap-inner {
+  min-width: 650px;
+}
+
+/* Cell colours (match the legend swatches) */
+.react-calendar-heatmap .color-empty {
+  fill: #eeeaf7;
+}
+.react-calendar-heatmap .color-done,
+.react-calendar-heatmap .color-scale-3 {
+  fill: #8b70c3;
+}
+.react-calendar-heatmap .color-scale-1 {
+  fill: #d5c7ed;
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #b39cdd;
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #6a4fa6;
+}
+.react-calendar-heatmap text {
+  font-size: 9px;
+  fill: #8b87a5;
+}
+.react-calendar-heatmap rect:hover {
+  stroke: #5a4a99;
+  stroke-width: 1px;
+}

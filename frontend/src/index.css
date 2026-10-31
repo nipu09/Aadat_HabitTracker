@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #fafafa;
+  --color-ink: #2a2742;
+  --color-muted: #5b5877;
+  --color-line: #e4e1ee;
+  --color-link: #5a4a99;
+
+  --color-lilac: #c0ace2;
+  --color-lilac-dark: #8e7cc3;
+  --color-lilac-light: #eae6f5;
+  --color-blush: #f6dbf0;
+  --color-mint: #cdefe8;
+
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-link;
+  }
+}
+/* ============================================================ */
+
+/* Global purple scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a48bcf #f0eafb;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f0eafb;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #a48bcf;
+  border: 2px solid #f0eafb;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #8064a5;
+}
+
+/* ============================================================ */
+
+
+.btn_ppl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9999px;
+
+  background: linear-gradient(to right, #b9a2e8, #cbb8f3);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 4px 10px rgba(193, 174, 226, 0.3);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.btn_ppl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(193, 174, 226, 0.4);
+}
+
+/* Click effect */
+.btn_ppl:active {
+  transform: scale(0.95);
+}
+
+/* Keyboard focus */
+.btn_ppl:focus-visible {
+  outline: 2px solid #c1aee2;
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.btn_ppl:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ============================================================ */
+
+.btn_wht {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 20px;
+  border: 1px solid #eee5f8;
+  border-radius: 9999px;
+
+  background-color: #ffffff;
+  color: #9b85c4;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.btn_wht:hover {
+  transform: translateY(-2px);
+  border-color: #fecdd3;
+  background-color: #fff1f2;
+  color: #f43f5e;
+
+  box-shadow: 0 4px 10px rgba(255, 228, 230, 0.6);
+}
+
+/* Click effect */
+.btn_wht:active {
+  transform: scale(0.95);
+}
+
+/* Keyboard focus */
+.btn_wht:focus-visible {
+  outline: 2px solid #fecdd3;
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.btn_wht:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================================== */
+
+.new-habit-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+
+  background: #bda7e4;
+  color: #302442;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.new-habit-btn:hover {
+  background: #ad94db;
+}
