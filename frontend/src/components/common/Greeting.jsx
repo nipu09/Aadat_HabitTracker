@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useAuth } from "../../context/AuthContext";
-import getQuotes from "../../api/Quotes";
+import getQuotes from "../api/Quotes";
 
 const DISPLAY = "font-['Instrument_Serif',serif] font-normal tracking-tight";
 
