@@ -5,7 +5,7 @@
 # 1) Forward API calls to the Vercel backend. Replace the host with your real backend URL.
 [[redirects]]
   from = "/api/*"
-  to = "aadat-habit-tracker.vercel.app"
+  to = "https://aadat-habit-tracker.vercel.app/:splat"
   status = 200
   force = true
 
